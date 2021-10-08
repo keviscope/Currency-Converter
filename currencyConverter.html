@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="converter.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<div class="kingz">
+    <h1 style="color: rgb(192, 0, 0); font-size: 70px; text-shadow: black; text-align: center;">ABOKI BARTER</h1>
+<img src="logo.png" height="700px" width="700px" ><br><br>
+<span style="background-color: coral; margin-left: 50%; font-weight: bold;  padding: 10px; color: cornsilk;">BARTER NOW</span>
+<br><br>
+
+
+</div>
+    <form style="display: none;">
+
+    
+    <h1>Currency Converter</h1>
+ 
+
+    <div id="mainHappening">
+       
+        <div> 
+            <label>Convert this Amount</label>
+        <input type="text" name="number" value="" id="amount" onkeypress="return isNumberKey(event, this.id)">
+    </div>
+
+
+    <div>
+        <label>From this currency</label>
+        <select id="decision">
+            <option value="USD">US Dollar(USD)</option>
+            <option value="Pound">Pound Sterling(GBP)</option>
+            <option value="Euro">Euro</option>
+            <option value="Naira">Naira</option>
+    
+        </select>
+      
+    </div>
+<div>
+
+    <label>To this currency</label>
+    <select id="decision1">
+        <option value="Naira">Naira</option>
+        <option value="Pound">Pound Sterling(GBP)</option>
+        <option value="USD">US Dollar(USD)</option>
+        <option value="Euro">Euro</option>
+    </select>
+</div>
+
+    </div>
+   
+
+   
+
+<br><br>
+
+    <label>Result</label>
+    <input type="text" name="text" id="result" readonly>
+    <br><br>
+    <input type="button" name="submit"  id="buttonYepa"onclick="ConvertNow()" value="Convert">
+</form>
+
+<script src="converter.js"></script>
+</body>
+</html>
